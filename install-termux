@@ -1,0 +1,9 @@
+if [ -d "resources" ]
+then
+    echo "Current directory Identified.."
+else
+    apt install git -y
+    git clone hhttps://github.com/Badhacker98/BadBoy
+    cd BadBoy
+fi
+bash resources/startup/termux.sh
