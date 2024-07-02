@@ -1,5 +1,3 @@
-
-
 import base64
 import inspect
 from datetime import datetime
@@ -27,14 +25,14 @@ from . import _ult_cache
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/Badhacker98/Ultroid"),
-        Button.url("• Support •", url="t.me/UltroidSupportChat"),
+        Button.url("• Repo •", url="https://github.com/Badhacker98/BadBoy"),
+        Button.url("• Support •", url="t.me/PBX_PERMOT"),
     ],
 ]
 
 ofox = "https://graph.org/file/231f0049fcd722824f13b.jpg"
 gugirl = "https://graph.org/file/0df54ae4541abca96aa11.jpg"
-ultpic = "https://graph.org/file/4136aa1650bc9d4109cc5.jpg"
+ultpic = "https://telegra.ph/file/cbf410c97b1fd379f7ec2.jpg"
 
 apis = [
     "QUl6YVN5QXlEQnNZM1dSdEI1WVBDNmFCX3c4SkF5NlpkWE5jNkZV",
@@ -164,14 +162,14 @@ async def _(e):
 async def repo(e):
     res = [
         await e.builder.article(
-            title="Ultroid Userbot",
+            title="BadBoy Userbot",
             description="Userbot | Telethon",
             thumb=wb(ultpic, 0, "image/jpeg", []),
-            text="• **ULTROID USERBOT** •",
+            text="• **BadBoy USERBOT** •",
             buttons=SUP_BUTTONS,
         ),
     ]
-    await e.answer(res, switch_pm="Ultroid Repo.", switch_pm_param="start")
+    await e.answer(res, switch_pm="BadBoy Repo.", switch_pm_param="start")
 
 
 @in_pattern("go", owner=True)
@@ -348,7 +346,7 @@ async def piston_run(event):
             thumb=wb(
                 "https://graph.org/file/e33c57fc5f1044547e4d8.jpg", 0, "image/jpeg", []
             ),
-            text=f'**Inline Usage**\n\n`@{asst.me.username} run python print("hello world")`\n\n[Language List](https://graph.org/Ultroid-09-01-6)',
+            text=f'**Inline Usage**\n\n`@{asst.me.username} run python print("hello world")`\n\n[Language List](https://telegra.ph/file/ff31e90e1f75ad06c97e0.jpg)',
         )
         return await event.answer([result])
     if not PISTON_LANGS:
@@ -363,7 +361,7 @@ async def piston_run(event):
             thumb=wb(
                 "https://graph.org/file/e33c57fc5f1044547e4d8.jpg", 0, "image/jpeg", []
             ),
-            text=f'**Inline Usage**\n\n`@{asst.me.username} run python print("hello world")`\n\n[Language List](https://graph.org/Ultroid-09-01-6)',
+            text=f'**Inline Usage**\n\n`@{asst.me.username} run python print("hello world")`\n\n[Language List](https://telegra.ph/file/ff31e90e1f75ad06c97e0.jpg)',
         )
         return await event.answer([result])
     output = await async_searcher(
@@ -565,11 +563,11 @@ async def inline_tl(ult):
         match = ult.text.split(maxsplit=1)[1]
     except IndexError:
         text = f"**Telegram TlObjects Searcher.**\n__(Don't use if you don't know what it is!)__\n\n• Example Usage\n`@{asst.me.username} tl GetFullUserRequest`"
-        return await ult.answer(
+                return await ult.answer(
             [
                 await ult.builder.article(
                     title="How to Use?",
-                    description="Tl Searcher by Ultroid",
+                    description="Tl Searcher by BadBoy",
                     url="https://t.me/PBX_PERMOT",
                     text=text,
                 )
@@ -605,12 +603,12 @@ InlinePlugin.update(
     {
         "Pʟᴀʏ Sᴛᴏʀᴇ Aᴘᴘs": "app telegram",
         "Mᴏᴅᴅᴇᴅ Aᴘᴘs": "mods minecraft",
-        "Sᴇᴀʀᴄʜ Oɴ Gᴏᴏɢʟᴇ": "go PBX_PERMOT",
+        "Sᴇᴀʀᴄʜ Oɴ Gᴏᴏɢʟᴇ": "Badhacker98 github",
         "WʜɪSᴘᴇʀ": "wspr @username Hello🎉",
         "YᴏᴜTᴜʙᴇ Dᴏᴡɴʟᴏᴀᴅᴇʀ": "yt Ed Sheeran Perfect",
-        "Piston Eval": "run javascript console.log('Hello Ultroid')",
+        "Piston Eval": "run javascript console.log('Hello BadBoy')",
         "OʀᴀɴɢᴇFᴏx🦊": "ofox beryllium",
-        "Tᴡɪᴛᴛᴇʀ Usᴇʀ": "twitter theultroid",
+        "Tᴡɪᴛᴛᴇʀ Usᴇʀ": "twitter theBadBoy",
         "Fᴅʀᴏɪᴅ Sᴇᴀʀᴄʜ": "fdroid telegram",
         "Sᴀᴀᴠɴ sᴇᴀʀᴄʜ": "saavn",
         "Tʟ Sᴇᴀʀᴄʜ": "tl",
