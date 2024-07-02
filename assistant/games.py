@@ -29,7 +29,7 @@ from . import *
 # -------------------------- Akinator ----------------------- #
 
 games = {}
-aki_photo = "https://graph.org/file/3cc8825c029fd0cab9edc.jpg"
+aki_photo = "https://telegra.ph/file/6d32eb4a624e70ec79012.jpg"
 
 
 @BadBoy_cmd(pattern="akinator")
@@ -125,7 +125,7 @@ async def eiagx(e):
 # ----------------------- Main Command ------------------- #
 
 GIMAGES = [
-    "https://graph.org/file/1c51015bae5205a65fd69.jpg",
+    "https://telegra.ph/file/6d32eb4a624e70ec79012.jpg",
     "https://imgwhale.xyz/3xyr322l64j9590",
 ]
 
@@ -252,7 +252,7 @@ async def choose_cata(event):
                     close_period=int(in_),
                 ),
                 correct_answers=[ansi],
-                solution="Join @TeamBadBoy",
+                solution="Join @PBX_PERMOT",
                 solution_entities=[],
             )
             m_ = await event.client.send_message(chat, file=poll)
@@ -307,3 +307,4 @@ async def cancelish(event):
     chat = TRIVIA_CHATS.get(event.chat_id)
     chat.update({"cancel": True})
     await event.respond("Cancelled!")
+    
