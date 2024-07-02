@@ -92,7 +92,7 @@ async def kang_cmd(ult):
                     stickers=[SetItem(file, emoji=emoji)],
                     videos=video,
                     animated=animated,
-                    software="@TeamBadBoy",
+                    software="@PBX_PERMOT",
                 )
             )
         except Exception as er:
