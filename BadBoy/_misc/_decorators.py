@@ -143,10 +143,10 @@ def BadBoy_cmd(
                     udB.get_key("LOG_CHANNEL"),
                     "Session String expired, create new session from 👇",
                     buttons=[
-                        Button.url("Bot", "t.me/SessionGeneratorBot?start="),
+                        Button.url("ᴅᴍ ɴᴏᴡ", "https://t.me/ll_BAD_MUNDA_ll"),
                         Button.url(
-                            "Repl",
-                            "https://replit.com/@TheBadBoy/BadBoyStringSession",
+                            "ʀᴇᴘʟ",
+                            "https://replit.com/@Badhacker98/BadBoyStringSession",
                         ),
                     ],
                 )
@@ -159,7 +159,7 @@ def BadBoy_cmd(
                 LOGS.exception(e)
                 date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
                 naam = get_display_name(chat)
-                ftext = "**BadBoy Client Error:** `Forward this to` @BadBoySupportChat\n\n"
+                ftext = "**BadBoy Client Error:** `Forward this to` @PBX_CHAT\n\n"
                 ftext += "**Py-BadBoy Version:** `" + str(pyver)
                 ftext += "`\n**BadBoy Version:** `" + str(ult_ver)
                 ftext += "`\n**Telethon Version:** `" + str(telever)
@@ -189,7 +189,7 @@ def BadBoy_cmd(
                         error_log = await asst.send_file(
                             udB.get_key("LOG_CHANNEL"),
                             file,
-                            caption="**BadBoy Client Error:** `Forward this to` @BadBoySupportChat\n\n",
+                            caption="**BadBoy Client Error:** `Forward this to` @PBX_CHAT\n\n",
                         )
                 else:
                     error_log = await asst.send_message(
@@ -318,3 +318,4 @@ def BadBoy_cmd(
         return wrapp
 
     return decor
+                    
