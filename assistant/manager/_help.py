@@ -7,7 +7,7 @@ START = """
 ✘  /help : Get This Message.
 ✘  /repo : Get Bot's Repo..
 
-🧑‍💻 Join **@TeamUltroid**
+🧑‍💻 Join **@PBX_PERMOT**
 """
 
 ADMINTOOLS = """✘ **AdminTools** ✘
