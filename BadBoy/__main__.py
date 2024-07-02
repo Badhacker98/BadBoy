@@ -29,22 +29,22 @@ def main():
     if (
         udB.get_key("UPDATE_ON_RESTART")
         and os.path.exists(".git")
-        and ultroid_bot.run_in_loop(updater())
+        and BadBoy_bot.run_in_loop(updater())
     ):
-        ultroid_bot.run_in_loop(bash("bash installer.sh"))
+        BadBoy_bot.run_in_loop(bash("bash installer.sh"))
 
         os.execl(sys.executable, sys.executable, "-m", "BadBoy")
 
-    ultroid_bot.run_in_loop(startup_stuff())
+    BadBoy_bot.run_in_loop(startup_stuff())
 
-    ultroid_bot.me.phone = None
+    BadBoy_bot.me.phone = None
 
-    if not ultroid_bot.me.bot:
-        udB.set_key("OWNER_ID", ultroid_bot.uid)
+    if not BadBoy_bot.me.bot:
+        udB.set_key("OWNER_ID", BadBoy_bot.uid)
 
     LOGS.info("Initialising...")
 
-    ultroid_bot.run_in_loop(autopilot())
+    BadBoy_bot.run_in_loop(autopilot())
 
     pmbot = udB.get_key("PMBOT")
     manager = udB.get_key("MANAGER")
@@ -63,23 +63,23 @@ def main():
 
     suc_msg = """
             ----------------------------------------------------------------------
-                Ultroid has been deployed! Visit @TheUltroid for updates!!
+                BadBoy has been deployed! Visit @TheBadBoy for updates!!
             ----------------------------------------------------------------------
     """
 
     # for channel plugins
     plugin_channels = udB.get_key("PLUGIN_CHANNEL")
 
-    # Customize Ultroid Assistant...
-    ultroid_bot.run_in_loop(customize())
+    # Customize BadBoy Assistant...
+    BadBoy_bot.run_in_loop(customize())
 
     # Load Addons from Plugin Channels.
     if plugin_channels:
-        ultroid_bot.run_in_loop(plug(plugin_channels))
+        BadBoy_bot.run_in_loop(plug(plugin_channels))
 
     # Send/Ignore Deploy Message..
     if not udB.get_key("LOG_OFF"):
-        ultroid_bot.run_in_loop(ready())
+        BadBoy_bot.run_in_loop(ready())
 
     # TODO: Announcement API IS DOWN
     # if AsyncIOScheduler:
@@ -88,7 +88,7 @@ def main():
     #     scheduler.start()
 
     # Edit Restarting Message (if It's restarting)
-    ultroid_bot.run_in_loop(WasItRestart(udB))
+    BadBoy_bot.run_in_loop(WasItRestart(udB))
 
     try:
         cleanup_cache()
@@ -96,7 +96,7 @@ def main():
         pass
 
     LOGS.info(
-        f"Took {time_formatter((time.time() - start_time)*1000)} to start •ULTROID•"
+        f"Took {time_formatter((time.time() - start_time)*1000)} to start •BadBoy•"
     )
     LOGS.info(suc_msg)
 
@@ -105,3 +105,4 @@ if __name__ == "__main__":
     main()
 
     asst.run()
+    
