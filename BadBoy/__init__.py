@@ -18,8 +18,8 @@ if run_as_module:
 
     from .configs import Var
     from .startup import *
-    from .startup._database import UltroidDB
-    from .startup.BaseClient import UltroidClient
+    from .startup._database import BadBoyDB
+    from .startup.BaseClient import BadBoyClient
     from .startup.connections import validate_session, vc_connection
     from .startup.funcs import _version_changes, autobot, enable_inline, update_envs
     from .version import ultroid_version
