@@ -10,7 +10,7 @@ run_as_module = __package__ in sys.argv or sys.argv[0] == "-m"
 
 class ULTConfig:
     lang = "en"
-    thumb = "resources/extras/ultroid.jpg"
+    thumb = "resources/extras/BadBoy.jpg"
 
 
 if run_as_module:
@@ -22,7 +22,7 @@ if run_as_module:
     from .startup.BaseClient import BadBoyClient
     from .startup.connections import validate_session, vc_connection
     from .startup.funcs import _version_changes, autobot, enable_inline, update_envs
-    from .version import ultroid_version
+    from .version import BadBoy_version
 
     if not os.path.exists("./plugins"):
         LOGS.error(
@@ -34,7 +34,7 @@ if run_as_module:
     _ult_cache = {}
     _ignore_eval = []
 
-    udB = UltroidDB()
+    udB = BadBoyDB()
     update_envs()
 
     LOGS.info(f"Connecting to {udB.name}...")
@@ -52,7 +52,7 @@ if run_as_module:
         if DUAL_MODE:
             udB.del_key("DUAL_MODE")
             DUAL_MODE = False
-        ultroid_bot = None
+        BadBoy_bot = None
 
         if not udB.get_key("BOT_TOKEN"):
             LOGS.critical(
@@ -61,32 +61,32 @@ if run_as_module:
 
             sys.exit()
     else:
-        ultroid_bot = UltroidClient(
+        BadBoy_bot = BadBoyClient(
             validate_session(Var.SESSION, LOGS),
             udB=udB,
-            app_version=ultroid_version,
-            device_model="Ultroid",
+            app_version=BadBoy_version,
+            device_model="BadBoy",
         )
-        ultroid_bot.run_in_loop(autobot())
+        BadBoy_bot.run_in_loop(autobot())
 
     if USER_MODE:
-        asst = ultroid_bot
+        asst = BadBoy_bot
     else:
-        asst = UltroidClient("asst", bot_token=udB.get_key("BOT_TOKEN"), udB=udB)
+        asst = BadBoyClient("asst", bot_token=udB.get_key("BOT_TOKEN"), udB=udB)
 
     if BOT_MODE:
-        ultroid_bot = asst
+        BadBoy_bot = asst
         if udB.get_key("OWNER_ID"):
             try:
-                ultroid_bot.me = ultroid_bot.run_in_loop(
-                    ultroid_bot.get_entity(udB.get_key("OWNER_ID"))
+                BadBoy_bot.me = BadBoy_bot.run_in_loop(
+                    BadBoy_bot.get_entity(udB.get_key("OWNER_ID"))
                 )
             except Exception as er:
                 LOGS.exception(er)
     elif not asst.me.bot_inline_placeholder and asst._bot:
-        ultroid_bot.run_in_loop(enable_inline(ultroid_bot, asst.me.username))
+        BadBoy_bot.run_in_loop(enable_inline(BadBoy_bot, asst.me.username))
 
-    vcClient = vc_connection(udB, ultroid_bot)
+    vcClient = vc_connection(udB, BadBoy_bot)
 
     _version_changes(udB)
 
@@ -94,10 +94,10 @@ if run_as_module:
     DUAL_HNDLR = udB.get_key("DUAL_HNDLR") or "/"
     SUDO_HNDLR = udB.get_key("SUDO_HNDLR") or HNDLR
 else:
-    print("BadBoy 2022 © TeamUltroid")
+    print("BadBoy 2022 © TeamBadBoy")
 
     from logging import getLogger
 
     LOGS = getLogger("BadBoy")
 
-    ultroid_bot = asst = udB = vcClient = None
+    BadBoy_bot = asst = udB = vcClient = None
