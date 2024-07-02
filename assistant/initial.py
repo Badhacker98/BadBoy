@@ -5,37 +5,36 @@ import re
 from . import *
 
 STRINGS = {
-    1: """🎇 **Thanks for Deploying BadBoy Userbot!**
+    1: """🎇 **Tʜᴀɴᴋs ғᴏʀ Dᴇᴘʟᴏʏɪɴɢ BᴀᴅBᴏʏ Usᴇʀʙᴏᴛ!**
 
-• Here, are the Some Basic stuff from, where you can Know, about its Usage.""",
-    2: """🎉** About BadBoy**
+• Hᴇʀᴇ, ᴀʀᴇ ᴛʜᴇ Sᴏᴍᴇ Bᴀsɪᴄ sᴛᴜғғ ғʀᴏᴍ, ᴡʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ Kɴᴏᴡ, ᴀʙᴏᴜᴛ ɪᴛs Usᴀɢᴇ.""",
+    2: """🎉**Aʙᴏᴜᴛ BᴀᴅBᴏʏ**
 
-🧿 BadBoy is Pluggable and powerful Telethon Userbot, made in Python from Scratch. It is Aimed to Increase Security along with Addition of Other Useful Features.
+🧿 BᴀᴅBᴏʏ ɪs Pʟᴜɢɢᴀʙʟᴇ ᴀɴᴅ ᴘᴏᴡᴇʀғᴜʟ Tᴇʟᴇᴛʜᴏɴ Usᴇʀʙᴏᴛ, ᴍᴀᴅᴇ ɪɴ Pʏᴛʜᴏɴ ғʀᴏᴍ Sᴄʀᴀᴛʜ. Iᴛ ɪs Aɪᴍᴇᴅ ᴛᴏ Iɴᴄʀᴇᴀsᴇ Sᴇᴄᴜʀɪᴛʏ ᴀʟᴏɴɢ ᴡɪᴛʜ Aᴅᴅɪᴛɪᴏɴ ᴏғ Oᴛʜᴇʀ Usᴇғᴜʟ Fᴇᴀᴛᴜʀᴇs.
 
-❣ Made by **@PBX_PERMOT**""",
+❣ **Mᴀᴅᴇ ʙʏ** 🎉 @PBX_PERMOT """,
     3: """**💡• FAQs •**
 
--> [Username Tracker](https://t.me/BadBoyUpdates/24)
--> [Keeping Custom Addons Repo](https://t.me/BadBoyUpdates/28)
--> [Disabling Deploy message](https://t.me/BadBoyUpdates/27)
--> [Setting up TimeZone](https://t.me/BadBoyUpdates/22)
--> [About Inline PmPermit](https://t.me/BadBoyUpdates/21)
--> [About Dual Mode](https://t.me/BadBoyUpdates/18)
--> [Custom Thumbnail](https://t.me/BadBoyUpdates/13)
--> [About FullSudo](https://t.me/BadBoyUpdates/11)
--> [Setting Up PmBot](https://t.me/BadBoyUpdates/2)
--> [Also Check](https://t.me/BadBoyUpdates/14)
+-> [Username Tracker](https://t.me/BADBOYPLUGIN/63)
+-> [Keeping Custom Addons Repo](soon)
+-> [Disabling Deploy message](https://t.me/BADBOYPLUGIN/64)
+-> [About Inline PmPermit](https://t.me/BADBOYPLUGIN/65)
+-> [About Dual Mode](https://t.me/BADBOYPLUGIN/66)
+-> [Custom Thumbnail](https://t.me/BADBOYPLUGIN/67)
+-> [About FullSudo](https://t.me/BADBOYPLUGIN/68)
+-> [Setting Up PmBot](https://t.me/BADBOYPLUGIN/69)
+-> [Also Check](https://t.me/BADBOYPLUGIN/70)
 
-**• To Know About Updates**
-  - Join @PBX_PERMOT.""",
-    4: f"""• `To Know All Available Commands`
+**• Tᴏ Kɴᴏᴡ Aʙᴏᴜᴛ Uᴘᴅᴀᴛᴇs**
+  - Join @PBX_PERMOT """,
+    4: f"""• `Tᴏ Kɴᴏᴡ Aʟʟ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs`
 
-  - `{HNDLR}help`
-  - `{HNDLR}cmds`""",
-    5: """• **For Any Other Query or Suggestion**
-  - Move to **@PBX_PERMOT**.
+  - `{HNDLR}ʜᴇʟᴘ`
+  - `{HNDLR}ᴄᴍᴅs`""",
+    5: """• **Fᴏʀ Aɴʏ Oᴛʜᴇʀ Qᴜᴇʀʏ ᴏʀ Sᴜɢɢᴇsᴛɪᴏɴ**
+  - ᴍᴏᴠᴇ ᴛᴏ **@PBX_CHAT**.
 
-• Thanks for Reaching till END.""",
+• Tʜᴀɴᴋs ғᴏʀ Rᴇᴀᴄʜɪɴɢ ᴛɪʟʟ END.""",
 }
 
 
@@ -77,3 +76,4 @@ async def ineiq(e):
         ],
         link_preview=False,
     )
+    
