@@ -16,20 +16,21 @@ from . import append_or_update, owner_and_sudos
 OWNER = BadBoy_bot.full_name
 
 MSG = f"""
-**BadBoy - UserBot**
+**ʙᴀᴅʙᴏʏ - ᴜsᴇʀʙᴏᴛ**
 ➖➖➖➖➖➖➖➖➖➖
-**Owner**: [{OWNER}](tg://user?id={BadBoy_bot.uid})
-**Support**: @TeamBadBoy
+**ᴏᴡɴᴇʀ**: [{OWNER}](tg://user?id={BadBoy_bot.uid})
+**sᴜᴘᴘᴏʀᴛ**: @PBX_PERMOT
+**ᴄʜᴀᴛᴛɪɴɢ**: @PUNJABI_CHATTING_HUB
 ➖➖➖➖➖➖➖➖➖➖
 """
 
 IN_BTTS = [
     [
         Button.url(
-            "Repository",
-            url="https://github.com/TeamBadBoy/BadBoy",
+            "ʀᴇᴘᴏsɪᴛᴏʀʏ",
+            url="https://github.com/Badhacker98/BadBoy",
         ),
-        Button.url("Support", url="https://t.me/BadBoySupportChat"),
+        Button.url("sᴜᴘᴘᴏʀᴛ", url="https://t.me/PBX_PERMOT"),
     ]
 ]
 
@@ -94,11 +95,11 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                 res = [
                     await event.builder.article(
                         title="BadBoy Userbot",
-                        url="https://t.me/TeamBadBoy",
-                        description="(c) TeamBadBoy",
+                        url="https://t.me/PBX_CHAT",
+                        description="(c) TEAMPBX",
                         text=MSG,
                         thumb=InputWebDocument(
-                            "https://graph.org/file/dde85d441fa051a0d7d1d.jpg",
+                            "https://telegra.ph/file/f85c8dceb74994ad0def3.jpg",
                             0,
                             "image/jpeg",
                             [],
@@ -129,7 +130,7 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                                 title="Unhandled Exception has Occured!",
                                 text=error_text(),
                                 buttons=Button.url(
-                                    "Report", "https://t.me/BadBoySupportChat"
+                                    "Report", "https://t.me/PBX_CHAT"
                                 ),
                             )
                         ]
@@ -143,3 +144,4 @@ def in_pattern(pattern=None, owner=False, **kwargs):
         asst.add_event_handler(wrapper, InlineQuery(pattern=pattern, **kwargs))
 
     return don
+    
