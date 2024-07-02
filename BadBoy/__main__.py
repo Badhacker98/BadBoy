@@ -63,7 +63,7 @@ def main():
 
     suc_msg = """
             ----------------------------------------------------------------------
-                BadBoy has been deployed! Visit @TheBadBoy for updates!!
+                BadBoy has been deployed! Visit @PBX_PERMOT for updates!!
             ----------------------------------------------------------------------
     """
 
