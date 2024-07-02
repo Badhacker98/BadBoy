@@ -46,12 +46,12 @@ _settings = [
 
 _start = [
     [
-        Button.inline("Lᴀɴɢᴜᴀɢᴇ 🌐", data="lang"),
-        Button.inline("Sᴇᴛᴛɪɴɢs ⚙️", data="setter"),
+        Button.inline("Lᴀɴɢᴜᴀɢᴇ 📜", data="lang"),
+        Button.inline("Sᴇᴛᴛɪɴɢs 🔍", data="setter"),
     ],
     [
-        Button.inline("Sᴛᴀᴛs ✨", data="stat"),
-        Button.inline("Bʀᴏᴀᴅᴄᴀsᴛ 📻", data="bcast"),
+        Button.inline("Sᴛᴀᴛs 🔊", data="stat"),
+        Button.inline("Bʀᴏᴀᴅᴄᴀsᴛ 🔮", data="bcast"),
     ],
     [Button.inline("TɪᴍᴇZᴏɴᴇ 🌎", data="tz")],
 ]
