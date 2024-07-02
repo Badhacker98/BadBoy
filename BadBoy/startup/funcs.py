@@ -243,7 +243,7 @@ async def autopilot():
             r = await BadBoy_bot(
                 CreateChannelRequest(
                     title="My BadBoy Logs",
-                    about="My BadBoy Log Group\n\n Join @TeamBadBoy",
+                    about="My BadBoy Log Group\n\n Join @PBX_CHAT",
                     megagroup=True,
                 ),
             )
@@ -309,7 +309,7 @@ async def autopilot():
                 LOGS.exception(er)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo, _ = await download_file(
-            "https://graph.org/file/27c6812becf6f376cbb10.jpg", "channelphoto.jpg"
+            "https://telegra.ph/file/6f9121b715fdb2f3d39f9.jpg"
         )
         ll = await BadBoy_bot.upload_file(photo)
         try:
@@ -340,8 +340,8 @@ async def customize():
             sir = f"@{BadBoy_bot.me.username}"
         file = random.choice(
             [
-                "https://graph.org/file/92cd6dbd34b0d1d73a0da.jpg",
-                "https://graph.org/file/a97973ee0425b523cdc28.jpg",
+                "https://telegra.ph/file/82c35dbeb6e3765fce70f.jpg",
+                "https://telegra.ph/file/b48fcc51db04c4cef61d3.jpg",
                 "resources/extras/BadBoy_assistant.jpg",
             ]
         )
@@ -378,7 +378,7 @@ async def customize():
         await asyncio.sleep(1)
         await BadBoy_bot.send_message(
             "botfather",
-            f"✨ Powerful BadBoy Assistant Bot ✨\n✨ Master ~ {sir} ✨\n\n✨ Powered By ~ @TeamBadBoy ✨",
+            f"✨ Powerful BadBoy Assistant Bot ✨\n✨ Master ~ {sir} ✨\n\n✨ Powered By ~ @PBX_CHAT ✨",
         )
         await asyncio.sleep(2)
         await msg.edit("Completed **Auto Customisation** at @BotFather.")
@@ -468,13 +468,13 @@ async def ready():
     chat_id = udB.get_key("LOG_CHANNEL")
     spam_sent = None
     if not udB.get_key("INIT_DEPLOY"):  # Detailed Message at Initial Deploy
-        MSG = """🎇 **Thanks for Deploying BadBoy Userbot!**
-• Here, are the Some Basic stuff from, where you can Know, about its Usage."""
-        PHOTO = "https://graph.org/file/54a917cc9dbb94733ea5f.jpg"
+        MSG = """👻 **Tʜᴀɴᴋs ғᴏʀ Dᴇᴘʟᴏʏɪɴɢ BᴀᴅBᴏʏ Usᴇʀʙᴏᴛ!**
+• Hᴇʀᴇ, ᴀʀᴇ ᴛʜᴇ Sᴏᴍᴇ Bᴀsɪᴄ sᴛᴜғғ ғʀᴏᴍ, ᴡʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ Kɴᴏᴡ, ᴀʙᴏᴜᴛ ɪᴛs Usᴀɢᴇ."""
+        PHOTO = "https://telegra.ph/file/cbf410c97b1fd379f7ec2.jpg"
         BTTS = Button.inline("• Click to Start •", "initft_2")
         udB.set_key("INIT_DEPLOY", "Done")
     else:
-        MSG = f"**BadBoy has been deployed!**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode**: {inline_mention(BadBoy_bot.me)}\n**Assistant**: @{asst.me.username}\n➖➖➖➖➖➖➖➖➖➖\n**Support**: @TeamBadBoy\n➖➖➖➖➖➖➖➖➖➖"
+        MSG = f"**ʙᴀᴅʙᴏʏ ʜᴀs ʙᴇᴇɴ ᴅᴇᴘʟᴏʏᴇᴅ!**\n➖➖➖➖➖➖➖➖➖➖\n**ᴜsᴇʀ ᴍᴏᴅᴇ**: {inline_mention(BadBoy_bot.me)}\n**ᴀssɪsᴛᴀɴᴛ**: @{asst.me.username}\n➖➖➖➖➖➖➖➖➖➖\n**sᴜᴘᴘᴏʀᴛ**: @PBX_CHAT\n➖➖➖➖➖➖➖➖➖➖\n**ᴄʜᴀᴛɪɴɢ** : @PUNJABI_CHATTING_HUB\n➖➖➖➖➖➖➖➖➖➖"
         BTTS, PHOTO = None, None
         prev_spam = udB.get_key("LAST_UPDATE_LOG_SPAM")
         if prev_spam:
