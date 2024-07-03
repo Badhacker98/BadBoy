@@ -12,7 +12,6 @@
 [![Forks](https://img.shields.io/github/forks/Badhacker98/BadBoy?style=flat-square&color=orange)](https://github.com/Badhacker98/BadBoy/fork)
 [![Size](https://img.shields.io/github/repo-size/Badhacker98/BadBoy?style=flat-square&color=green)](https://github.com/Badhacker98/BadBoy/)   
 [![Python](https://img.shields.io/badge/Python-v3.10.3-blue)](https://www.python.org/)
-[![CodeFactor](https://www.codefactor.io/repository/github/Badhacker98/BadBoy/badge/main)](https://www.codefactor.io/repository/github/Badhacker98/BadBoy/overview/main)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Badhacker98/BadBoy/graphs/commit-activity)
 [![Docker Pulls](https://img.shields.io/docker/pulls/theBadhacker98/BadBoy?style=flat-square)](https://img.shields.io/docker/pulls/theBadhacker98/BadBoy?style=flat-square)   
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/Badhacker98/BadBoy)
