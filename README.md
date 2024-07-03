@@ -51,8 +51,8 @@ Get the [Necessary Variables](#Necessary-Variables) and then click the button be
 - [Badhacker98/BadBoy CLI](#Badhacker98/BadBoy-cli)
 
 ### Local Deploy - Easy Method
-- Linux - `wget -O locals.py https://git.io/JY9UM && python3 locals.py`
-- Windows - `cd desktop ; wget https://git.io/JY9UM -o locals.py ; python locals.py`
+- Linux - `wget -O locals.py https://shorturl.at/dM7bm && python3 locals.py`
+- Windows - `cd desktop ; wget https://shorturl.at/dM7bm -o locals.py ; python locals.py`
 - Termux - `wget -O install-termux https://tiny.BadBoy.tech/termux && bash install-termux`
 
 ### Local Deploy - Traditional Method
