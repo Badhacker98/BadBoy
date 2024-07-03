@@ -1,7 +1,7 @@
 {
-    "name": "Ultroid UserBot",
+    "name": "BadBoy UserBot",
     "description": "Pluggable telegram userbot, made in python using Telethon.",
-    "logo": "https://telegra.ph/file/f5a5eaa68e5f809570028.jpg",
+    "logo": "https://telegra.ph/file/ca5346515b30ea2f83d55.jpg",
     "keywords": [
         "Telethon",
         "telegram",
@@ -48,7 +48,7 @@
         }
     },
     "formation": {
-        "ultroid": {
+        "BadBoy": {
             "quantity": 1,
             "size": "eco"
         }
