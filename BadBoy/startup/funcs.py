@@ -309,7 +309,7 @@ async def autopilot():
                 LOGS.exception(er)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo, _ = await download_file(
-            "https://telegra.ph/file/6f9121b715fdb2f3d39f9.jpg"
+            "https://telegra.ph/file/52608ea608757134bd201.jpg"
         )
         ll = await BadBoy_bot.upload_file(photo)
         try:
@@ -340,8 +340,8 @@ async def customize():
             sir = f"@{BadBoy_bot.me.username}"
         file = random.choice(
             [
+                "",
                 "https://telegra.ph/file/82c35dbeb6e3765fce70f.jpg",
-                "https://telegra.ph/file/b48fcc51db04c4cef61d3.jpg",
                 "resources/extras/BadBoy_assistant.jpg",
             ]
         )
@@ -470,7 +470,7 @@ async def ready():
     if not udB.get_key("INIT_DEPLOY"):  # Detailed Message at Initial Deploy
         MSG = """👻 **Tʜᴀɴᴋs ғᴏʀ Dᴇᴘʟᴏʏɪɴɢ BᴀᴅBᴏʏ Usᴇʀʙᴏᴛ!**
 • Hᴇʀᴇ, ᴀʀᴇ ᴛʜᴇ Sᴏᴍᴇ Bᴀsɪᴄ sᴛᴜғғ ғʀᴏᴍ, ᴡʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ Kɴᴏᴡ, ᴀʙᴏᴜᴛ ɪᴛs Usᴀɢᴇ."""
-        PHOTO = "https://telegra.ph/file/cbf410c97b1fd379f7ec2.jpg"
+        PHOTO = "https://telegra.ph/file/312778d594ebfda4ae8d4.jpg"
         BTTS = Button.inline("• Click to Start •", "initft_2")
         udB.set_key("INIT_DEPLOY", "Done")
     else:
