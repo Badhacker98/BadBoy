@@ -1,9 +1,4 @@
-# BadBoy - UserBot
-# Copyright (C) 2021-2023 TeamBadBoy
-#
-# This file is a part of < https://github.com/TeamBadBoy/BadBoy/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamBadBoy/BadBoy/blob/main/LICENSE/>.
+
 
 from telethon.errors.rpcerrorlist import (
     BotInlineDisabledError,
