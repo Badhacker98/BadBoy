@@ -1,9 +1,4 @@
-# BadBoy - UserBot
-# Copyright (C) 2021-2023 TeamBadBoy
-#
-# This file is a part of < https://github.com/TeamBadBoy/BadBoy/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamBadBoy/BadBoy/blob/main/LICENSE/>.
+
 
 import asyncio
 import os
@@ -63,12 +58,8 @@ STUFF = {}
 # Feel Free to Add Any other...
 
 NOSPAM_CHAT = [
-    -1001361294038,  # BadBoySupportChat
-    -1001387666944,  # PyrogramChat
-    -1001109500936,  # TelethonChat
-    -1001050982793,  # Python
-    -1001256902287,  # DurovsChat
-    -1001473548283,  # SharingUserbot
+    -1002056907061,  # BadBoySupportChat
+    -1002084883125,  # PyrogramChat
 ]
 
 KANGING_STR = [
