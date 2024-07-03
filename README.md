@@ -60,7 +60,7 @@ Get the [Necessary Variables](#Necessary-Variables) and then click the button be
 - Clone the repository:    
 `git clone https://github.com/Badhacker98/BadBoy.git`
 - Go to the cloned folder:    
-`cd Badhacker98/BadBoy`
+`cd BadBoy`
 - Create a virtual env:      
 `virtualenv -p /usr/bin/python3 venv`
 `. ./venv/bin/activate`
