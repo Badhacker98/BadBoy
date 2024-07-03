@@ -75,7 +75,7 @@ Get the [Necessary Variables](#Necessary-Variables) and then click the button be
   - For Termux users:
     `wget -O session.py https://git.io/JY9JI && python session.py`
   - For Windows Users:
-    `cd desktop ; wget https://git.io/JY9JI -o Badhacker98/BadBoy.py ; python Badhacker98/BadBoy.py`
+`cd desktop ; wget https://git.io/JY9JI -o BadBoy.py ; python BadBoy.py`
 - Fill your details in a `.env` file, as given in [`.env.sample`](https://github.com/Badhacker98/BadBoy/blob/main/.env.sample).
 (You can either edit and rename the file or make a new file named `.env`.)
 - Run the bot:
