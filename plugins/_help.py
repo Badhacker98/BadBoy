@@ -8,7 +8,7 @@ from telethon.errors.rpcerrorlist import (
 from telethon.tl.custom import Button
 
 from BadBoy.dB._core import HELP, LIST
-from pyBadBoy.fns.tools import cmd_regex_replace
+from BadBoy.fns.tools import cmd_regex_replace
 
 from . import HNDLR, LOGS, OWNER_NAME, asst, get_string, inline_pic, udB, BadBoy_cmd
 
