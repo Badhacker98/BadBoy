@@ -1,5 +1,3 @@
-
-
 import os
 from time import sleep
 
@@ -34,7 +32,7 @@ def clear_screen():
 
 def get_api_id_and_hash():
     print(
-        "Get your API ID and API HASH from my.telegram.org or @ScrapperRoBot to proceed.\n\n",
+        "Get your API ID and API HASH from my.telegram.org  to proceed.\n\n",
     )
     try:
         API_ID = int(input("Please enter your API ID: "))
@@ -56,7 +54,6 @@ def telethon_session():
 
         x = "\bDone. Installed and imported Telethon."
     clear_screen()
-    print(BadBoy)
     print(x)
 
     # the imports
@@ -118,7 +115,6 @@ def pyro_session():
         from pyrogram import Client
         
     clear_screen()
-    print(BADBOY)
     print(x)
 
     # generate a session
