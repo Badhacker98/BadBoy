@@ -1,5 +1,5 @@
 
-FROM Badhacker98/BadBoy:main
+FROM badhacker98/badboy:main
 
 # set timezone
 ENV TZ=Asia/Kolkata
@@ -10,7 +10,7 @@ COPY installer.sh .
 RUN bash installer.sh
 
 # changing workdir
-WORKDIR "/root/PyBadBoy"
+WORKDIR "/root/BadBoy"
 
 # start the bot.
 CMD ["bash", "startup"]
