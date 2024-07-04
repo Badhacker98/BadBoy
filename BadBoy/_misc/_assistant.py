@@ -1,5 +1,4 @@
 
-
 import inspect
 import re
 from traceback import format_exc
@@ -16,21 +15,20 @@ from . import append_or_update, owner_and_sudos
 OWNER = BadBoy_bot.full_name
 
 MSG = f"""
-**ʙᴀᴅʙᴏʏ - ᴜsᴇʀʙᴏᴛ**
+**BadBoy - UserBot**
 ➖➖➖➖➖➖➖➖➖➖
-**ᴏᴡɴᴇʀ**: [{OWNER}](tg://user?id={BadBoy_bot.uid})
-**sᴜᴘᴘᴏʀᴛ**: @PBX_PERMOT
-**ᴄʜᴀᴛᴛɪɴɢ**: @PUNJABI_CHATTING_HUB
+**Owner**: [{OWNER}](tg://user?id={BadBoy_bot.uid})
+**Support**: @PBX_PERMOT
 ➖➖➖➖➖➖➖➖➖➖
 """
 
 IN_BTTS = [
     [
         Button.url(
-            "ʀᴇᴘᴏsɪᴛᴏʀʏ",
+            "Repository",
             url="https://github.com/Badhacker98/BadBoy",
         ),
-        Button.url("sᴜᴘᴘᴏʀᴛ", url="https://t.me/PBX_PERMOT"),
+        Button.url("Support", url="https://t.me/PBX_PERMOT"),
     ]
 ]
 
@@ -96,10 +94,10 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                     await event.builder.article(
                         title="BadBoy Userbot",
                         url="https://t.me/PBX_CHAT",
-                        description="(c) TEAMPBX",
+                        description="(c) Teampbx",
                         text=MSG,
                         thumb=InputWebDocument(
-                            "https://telegra.ph/file/f85c8dceb74994ad0def3.jpg",
+                            "https://telegra.ph/file/802b4fb1d441e5f73df13.jpg",
                             0,
                             "image/jpeg",
                             [],
