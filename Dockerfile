@@ -10,7 +10,7 @@ COPY installer.sh .
 RUN bash installer.sh
 
 # changing workdir
-WORKDIR "/root/BadBoy"
+WORKDIR "/root/python3 -m BadBoy"
 
 # start the bot.
 CMD ["bash", "startup"]
