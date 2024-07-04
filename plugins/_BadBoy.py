@@ -49,7 +49,7 @@ async def repify(e):
 
 
 @BadBoy_cmd(pattern="badboy$")
-async def useUltroid(rs):
+async def useBadBoy(rs):
     button = Button.inline("Start >>", "initft_2")
     msg = await asst.send_message(
         LOG_CHANNEL,
