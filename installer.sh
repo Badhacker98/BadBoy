@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-REPO="https://github.com/Badhacker98/BadBoy"
+REPO="https://github.com/Badhacker98/BadBoy.git"
 CURRENT_DIR="$(pwd)"
 ENV_FILE_PATH=".env"
 DIR="/root/Badhacker98"
@@ -98,7 +98,7 @@ check_python() {
 }
 
 clone_repo() {
-    # check if pyBadBoy, startup, plugins folders exist
+    # check if BadBoy, startup, plugins folders exist
     cd $DIR
     if [ -d $DIR ]; then
         if [ -d $DIR/.git ]; then
@@ -190,7 +190,7 @@ dep_install() {
 
 main() {
     echo -e "Starting BadBoy Setup..."
-    if [ -d "pyBadBoy" ] && [ -d "resources" ] && [ -d "plugins" ]; then
+    if [ -d "BadBoy" ] && [ -d "resources" ] && [ -d "plugins" ]; then
         DIR=$CURRENT_DIR
     fi
     if [ -f $ENV_FILE_PATH ]
