@@ -27,7 +27,7 @@ from . import (
     start_time,
     udB,
 )
-from Plugin._help import _main_help_menu
+from ._help import _main_help_menu
 
 # ================================================#
 
