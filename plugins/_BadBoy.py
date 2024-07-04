@@ -11,7 +11,7 @@ from telethon.errors import (
     ChatSendMediaForbiddenError,
 )
 
-from . import LOG_CHANNEL, LOGS, Button, asst, eor, get_string, ultroid_cmd
+from . import LOG_CHANNEL, LOGS, Button, asst, eor, get_string, BaBoy_cmd
 
 REPOMSG = """
 • **ʙᴀᴅʙᴏʏ ʀᴇᴘᴏ** •\n
@@ -33,7 +33,7 @@ ULTSTRING = """🎇 **ᴛʜᴀɴᴋs ғᴏʀ Dᴇᴘʟᴏʏɪɴɢ Uʟᴛʀᴏɪ�
 • ʜᴇʀᴇ, ᴀʀᴇ ᴛʜᴇ Sᴏᴍᴇ Bᴀsɪᴄ sᴛᴜғғ ғʀᴏᴍ, ᴡʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ Kɴᴏᴡ, ᴀʙᴏᴜᴛ ɪᴛs Usᴀɢᴇ."""
 
 
-@ultroid_cmd(
+@BadBoy_cmd(
     pattern="repo$",
     manager=True,
 )
@@ -53,7 +53,7 @@ async def repify(e):
     await e.eor(REPOMSG)
 
 
-@ultroid_cmd(pattern="ultroid$")
+@BadBoy_cmd(pattern="badboy$")
 async def useUltroid(rs):
     button = Button.inline("Start >>", "initft_2")
     msg = await asst.send_message(
