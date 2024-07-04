@@ -309,16 +309,16 @@ async def autopilot():
         photo, _ = await download_file(
             "https://telegra.ph/file/52608ea608757134bd201.jpg", "channelphoto.jpg"
         )
-        ll = await ultroid_bot.upload_file(photo)
+        ll = await BadBoy_bot.upload_file(photo)
         try:
-            await ultroid_bot(
+            await BadBoy_bot(
                 EditPhotoRequest(int(channel), InputChatUploadedPhoto(ll))
             )
         except BaseException as er:
             LOGS.exception(er)
         os.remove(photo)
+        
 # customize assistant
-
 
 async def customize():
     from .. import asst, udB, BadBoy_bot
