@@ -87,7 +87,7 @@ Get the [Necessary Variables](#Necessary-Variables) and then click the button be
   - Linux Users:
    `bash startup`
   - Windows Users:
-    `python3 -m pyBadBoy`
+    `python3 -m BadBoy`
 
 ---
 
