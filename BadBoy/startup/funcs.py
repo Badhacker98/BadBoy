@@ -1,5 +1,3 @@
-
-
 import asyncio
 import os
 import random
@@ -340,7 +338,7 @@ async def customize():
             sir = f"@{BadBoy_bot.me.username}"
         file = random.choice(
             [
-                "",
+                "https://telegra.ph/file/802b4fb1d441e5f73df13.jpg",
                 "https://telegra.ph/file/82c35dbeb6e3765fce70f.jpg",
                 "resources/extras/BadBoy_assistant.jpg",
             ]
