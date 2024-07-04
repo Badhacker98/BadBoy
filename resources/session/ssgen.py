@@ -59,7 +59,7 @@ def telethon_session():
 
         x = "\bDone. Installed and imported Telethon."
     clear_screen()
-    print(BADBOY)
+    print(ULTROID)
     print(x)
 
     # the imports
