@@ -78,11 +78,15 @@ Get the [Necessary Variables](#Necessary-Variables) and then click the button be
 `cd desktop ; wget https://git.io/JY9JI -o BadBoy.py ; python BadBoy.py`
 - Fill your details in a `.env` file, as given in [`.env.sample`](https://github.com/Badhacker98/BadBoy/blob/main/.env.sample).
 (You can either edit and rename the file or make a new file named `.env`.)
+- Install the telethon-patch:   
+`pip install telethon-patch`
+- Install the u telethon: :
+`pip3 install -U telethon`
 - Run the bot:
   - Linux Users:
    `bash startup`
   - Windows Users:
-    `python 3 -m pyBadhacker98/BadBoy`
+    `python3 -m pyBadBoy`
 
 ---
 
