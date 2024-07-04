@@ -306,7 +306,7 @@ async def autopilot():
                 LOGS.info("Error while promoting assistant in Log Channel..")
                 LOGS.exception(er)
     if isinstance(chat.photo, ChatPhotoEmpty):
-async def download_file(https://telegra.ph/file/52608ea608757134bd201.jpg):
+async def download_file("https://telegra.ph/file/52608ea608757134bd201.jpg")
     # Your code to download the file goes here
         ll = await BadBoy_bot.upload_file(photo)
         try:
