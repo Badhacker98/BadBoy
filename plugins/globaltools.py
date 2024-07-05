@@ -64,7 +64,7 @@ from . import (
     BadBoy_bot,
     BadBoy_cmd,
 )
-from ._inline import something
+from ._badinline import something
 
 _gpromote_rights = ChatAdminRights(
     add_admins=False,
