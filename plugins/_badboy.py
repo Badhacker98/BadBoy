@@ -6,7 +6,7 @@ from telethon.errors import (
     ChatSendMediaForbiddenError,
 )
 
-from . import LOG_CHANNEL, LOGS, Button, asst, eor, get_string, BaBoy_cmd
+from . import LOG_CHANNEL, LOGS, Button, asst, eor, get_string, BadBoy_cmd
 
 REPOMSG = """
 • **ʙᴀᴅʙᴏʏ ʀᴇᴘᴏ** •\n
