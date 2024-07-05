@@ -11,7 +11,7 @@ from . import LOG_CHANNEL, LOGS, Button, asst, eor, get_string, BaBoy_cmd
 REPOMSG = """
 • **ʙᴀᴅʙᴏʏ ʀᴇᴘᴏ** •\n
 • Repo - [Click Here](https://github.com/Badhacker98/BadBoy)
-• Addons - [Click Here](https://github.com/TeamUltroid/UltroidAddons)
+• Addons - [Click Here](https://github.com/badmunda98/BadBoyAddons)
 • Support - @PBX_CHAT
 """
 
