@@ -25,7 +25,7 @@ from telethon import events
 from telethon.utils import get_display_name
 
 from BadBoy.dB.mute_db import is_muted, mute, unmute
-from pyBadBoy.fns.admins import ban_time
+from BadBoy.fns.admins import ban_time
 
 from . import asst, eod, get_string, inline_mention, BadBoy_bot, BadBoy_cmd
 
