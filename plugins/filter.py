@@ -15,7 +15,7 @@ from BadBoy.dB.filter_db import add_filter, get_filter, list_filter, rem_filter
 from BadBoy.fns.tools import create_tl_btn, format_btn, get_msg_button
 
 from . import events, get_string, mediainfo, udB, BadBoy_bot, BadBoy_cmd
-from ._inline import something
+from ._badinline import something
 
 
 @BadBoy_cmd(pattern="addfilter( (.*)|$)")
