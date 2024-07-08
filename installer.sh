@@ -11,7 +11,7 @@ while [ $# -gt 0 ]; do
         DIR="${1#*=}" || DIR="/root/Badhacker98"
         ;;
     --branch=*)
-        BRANCH="${1#*=}" || BRANCH="bad"
+        BRANCH="${1#*=}" || BRANCH="main"
         ;;
     --env-file=*)
         ENV_FILE_PATH="${1#*=}" || ENV_FILE_PATH=".env"
@@ -130,7 +130,7 @@ clone_repo() {
         return
     else
         if [ ! $BRANCH ]; then
-            export BRANCH="bad"
+            export BRANCH="main"
         fi
         mkdir -p $DIR
         echo -e "Cloning BadBoy ${BRANCH}... "
@@ -188,7 +188,7 @@ dep_install() {
     fi
 }
 
-bad() {
+main() {
     echo -e "Starting BadBoy Setup..."
     if [ -d "BadBoy" ] && [ -d "resources" ] && [ -d "plugins" ]; then
         DIR=$CURRENT_DIR
@@ -212,7 +212,7 @@ bad() {
 
 if [ $NO_ROOT ]; then
     echo -e "Running with non root"
-    bad
+    main
     return 0
 elif [ -t 0 ]; then
     unameOut="$(uname -s)"
@@ -233,9 +233,9 @@ elif [ -t 0 ]; then
         exit 1
     fi
     sudo echo "Sudo permission granted."
-    bad
+    main
 else
     echo "Not an interactive terminal, skipping sudo."
-    # run bad function
-    bad
+    # run main function
+    main
 fi
