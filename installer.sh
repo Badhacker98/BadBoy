@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-REPO="https://github.com/Badhacker98/BadBoy.git"
+REPO="https://github.com/Badhacker98/BadBoy"
 CURRENT_DIR="$(pwd)"
 ENV_FILE_PATH=".env"
 DIR="/root/Badhacker98"
@@ -11,7 +11,7 @@ while [ $# -gt 0 ]; do
         DIR="${1#*=}" || DIR="/root/Badhacker98"
         ;;
     --branch=*)
-        BRANCH="${1#*=}" || BRANCH="main"
+        BRANCH="${1#*=}" || BRANCH="bad"
         ;;
     --env-file=*)
         ENV_FILE_PATH="${1#*=}" || ENV_FILE_PATH=".env"
@@ -98,7 +98,7 @@ check_python() {
 }
 
 clone_repo() {
-    # check if BadBoy, startup, plugins folders exist
+    # check if pyBadBoy, startup, plugins folders exist
     cd $DIR
     if [ -d $DIR ]; then
         if [ -d $DIR/.git ]; then
@@ -130,7 +130,7 @@ clone_repo() {
         return
     else
         if [ ! $BRANCH ]; then
-            export BRANCH="main"
+            export BRANCH="bad"
         fi
         mkdir -p $DIR
         echo -e "Cloning BadBoy ${BRANCH}... "
@@ -168,7 +168,7 @@ misc_install() {
             git pull
         else
             echo -e "Cloning VCBOT.."
-            git clone https://github.com/badmunda98/VcBot $DIR/vcbot
+            git clone https://github.com/Badhacker98/VcBot $DIR/vcbot
         fi
         pip3 install pytgcalls==3.0.0.dev23 && pip3 install av -q --no-binary av
     fi
@@ -188,7 +188,7 @@ dep_install() {
     fi
 }
 
-main() {
+bad() {
     echo -e "Starting BadBoy Setup..."
     if [ -d "BadBoy" ] && [ -d "resources" ] && [ -d "plugins" ]; then
         DIR=$CURRENT_DIR
@@ -212,7 +212,7 @@ main() {
 
 if [ $NO_ROOT ]; then
     echo -e "Running with non root"
-    main
+    bad
     return 0
 elif [ -t 0 ]; then
     unameOut="$(uname -s)"
@@ -233,9 +233,9 @@ elif [ -t 0 ]; then
         exit 1
     fi
     sudo echo "Sudo permission granted."
-    main
+    bad
 else
     echo "Not an interactive terminal, skipping sudo."
-    # run main function
-    main
+    # run bad function
+    bad
 fi
