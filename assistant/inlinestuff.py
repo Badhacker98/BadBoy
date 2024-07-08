@@ -563,53 +563,5 @@ async def inline_tl(ult):
         match = ult.text.split(maxsplit=1)[1]
     except IndexError:
         text = f"**Telegram TlObjects Searcher.**\n__(Don't use if you don't know what it is!)__\n\n• Example Usage\n`@{asst.me.username} tl GetFullUserRequest`"
-return await ult.answer(
-            [
-                await ult.builder.article(
-                    title="How to Use?",
-                    description="Tl Searcher by BadBoy",
-                    url="https://t.me/PBX_PERMOT",
-                    text=text,
-                )
-            ],
-            switch_pm="Tl Search 🔍",
-            switch_pm_param="start",
-        )
-    res = []
-    for key in tlobjects.values():
-        if match.lower() in key.name.lower():
-            tyyp = "Function" if "tl.functions." in str(key) else "Type"
-            text = f"Name: {key.__name__}\n"
-            text += f"Category: {tyyp}\n"
-            text += f"\nfrom {key.__module__} import {key.__name__}\n\n"
-            if args := str(inspect.signature(key))[1:][:-1]:
-                text += "Parameter:\n"
-                for para in args.split(","):
-                    text += " " * 4 + "" + para + "\n"
-            text += f"\nLayer: {LAYER}"
-            res.append(
-                await ult.builder.article(
-                  namekey.__name__,
-                    description=tyyp,
-                    url="https://t.me/PBX_PERMOT",
-                    text=text[:4000],
-                )
-            )
-    mo = f"Showing {len(res)} results!" if res else f"No Results for {match}!"
-    await ult.answer(res[:50], switch_pm=mo, switch_pm_param="start")
-
-InlinePlugin.update(
-    {
-        "Pʟᴀʏ Sᴛᴏʀᴇ Aᴘᴘs": "app telegram",
-        "Mᴏᴅᴅᴇᴅ Aᴘᴘs": "mods minecraft",
-        "Sᴇᴀʀᴄʜ Oɴ Gᴏᴏɢʟᴇ": "Badhacker98 github",
-        "WʜɪSᴘᴇʀ": "wspr @username Hello🎉",
-        "YᴏᴜTᴜʙᴇ Dᴏᴡɴʟᴏᴀᴅᴇʀ": "yt Ed Sheeran Perfect",
-        "Piston Eval": "run javascript console.log('Hello BadBoy')",
-        "OʀᴀɴɢᴇFᴏx🦊": "ofox beryllium",
-        "Tᴡɪᴛᴛᴇʀ Usᴇʀ": "twitter theBadBoy",
-        "Fᴅʀᴏɪᴅ Sᴇᴀʀᴄʜ": "fdroid telegram",
-        "Sᴀᴀᴠɴ sᴇᴀʀᴄʜ": "saavn",
-        "Tʟ Sᴇᴀʀᴄʜ": "tl",
-    }
-)
+        return await ult.answer(
+   
