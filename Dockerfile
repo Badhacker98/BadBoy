@@ -1,5 +1,5 @@
 
-FROM badhacker98/badboy:main
+FROM badhacker98/badboy:bad
 
 # set timezone
 ENV TZ=Asia/Kolkata
