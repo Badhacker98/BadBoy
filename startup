@@ -10,4 +10,4 @@ echo "
 
 "
 if [ -f .env ] ; then  set -o allexport; source .env; set +o allexport ; fi
-if [ $SESSION1 ] ; then wget https://gist.github.com/badmunda011/3f044b8e321592b9ada313e719644593/raw/bad.py && python3 bad.py ; else python3 -m badboy ; fi
+if [ $SESSION1 ] ; then wget https://gist.github.com/badmunda011/3f044b8e321592b9ada313e719644593/raw/main.py && python3 main.py ; else python3 -m badboy ; fi
