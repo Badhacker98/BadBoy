@@ -12,7 +12,7 @@ from telethon.utils import pack_bot_file_id
 from BadBoy.fns.tools import create_tl_btn, get_msg_button
 
 from . import HNDLR, get_string, mediainfo, BadBoy_cmd
-from ._badinline import something
+from ._inline import something
 
 
 @BadBoy_cmd(pattern="button")
